@@ -2,98 +2,98 @@
 
 namespace Lesson1
 {
-    class Program
+    class Lesson1
     {
-        static void Main()
-        {
-            #region Задание 1
+        //static void Main()
+        //{
+        //    #region Задание 1
             
-            Console.WriteLine("Задание 1");
-            Console.WriteLine("Введите стоимость разговора без учета скидки.");
+        //    Console.WriteLine("Задание 1");
+        //    Console.WriteLine("Введите стоимость разговора без учета скидки.");
 
-            //проверка на корректность ввода
-            if (decimal.TryParse(Console.ReadLine(), out decimal Prise))
-            {
-                Exercise_1(Prise);
-            }
-            else
-            {
-                Console.WriteLine("Введены не корректные данные.");
-            }
-            #endregion
+        //    //проверка на корректность ввода
+        //    if (decimal.TryParse(Console.ReadLine(), out decimal Prise))
+        //    {
+        //        Exercise_1(Prise);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Введены не корректные данные.");
+        //    }
+        //    #endregion
 
-            #region Задание 2
+        //    #region Задание 2
 
-            Console.WriteLine("\n\n\n" + "Задание 2");
-            Console.WriteLine("Введите дату начала второй мировой войны (дд.мм.гг).");
+        //    Console.WriteLine("\n\n\n" + "Задание 2");
+        //    Console.WriteLine("Введите дату начала второй мировой войны (дд.мм.гг).");
             
-            //Проверка на кооректность ввода
-            if (DateTime.TryParse(Console.ReadLine(), out DateTime dateTime))
-            {
-                Exercise_2(dateTime);
-            }
-            else
-            {
-                Console.WriteLine("Введены не корректные данные.");
-            }
-            #endregion
+        //    //Проверка на кооректность ввода
+        //    if (DateTime.TryParse(Console.ReadLine(), out DateTime dateTime))
+        //    {
+        //        Exercise_2(dateTime);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Введены не корректные данные.");
+        //    }
+        //    #endregion
 
-            #region Задание 3
+        //    #region Задание 3
 
-            Console.WriteLine("\n\n\n" + "Задание 3");
-            Console.WriteLine("Введите произвольные числа А, B, C. Где А не равна нулю.");
+        //    Console.WriteLine("\n\n\n" + "Задание 3");
+        //    Console.WriteLine("Введите произвольные числа А, B, C. Где А не равна нулю.");
 
-            //Проверка на кооректность ввода
-            if (double.TryParse(Console.ReadLine(), out double a) && double.TryParse(Console.ReadLine(), out double b) && double.TryParse(Console.ReadLine(), out double c) && a != 0)
-            {
-                Console.WriteLine("" + Exercise_3(a, b, c));
-            }
-            else
-            {
-                Console.WriteLine("Не корректно введены данные");
-            }
-            #endregion
+        //    //Проверка на кооректность ввода
+        //    if (double.TryParse(Console.ReadLine(), out double a) && double.TryParse(Console.ReadLine(), out double b) && double.TryParse(Console.ReadLine(), out double c) && a != 0)
+        //    {
+        //        Console.WriteLine("" + Exercise_3(a, b, c));
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Не корректно введены данные");
+        //    }
+        //    #endregion
 
-            #region Задание 4
+        //    #region Задание 4
 
-            Console.WriteLine("\n\n\n" + "Задание 4");
-            Console.WriteLine("Введите произвольное число Х");
+        //    Console.WriteLine("\n\n\n" + "Задание 4");
+        //    Console.WriteLine("Введите произвольное число Х");
 
-            //проверка на корректность ввода
-            if (double.TryParse(Console.ReadLine(), out double X))
-            {
-                Console.WriteLine($"При х={X} функция S'(x)={Exercise_4(X)}");
-            }
-            else
-            {
-                Console.WriteLine("Введены не корректные данные.");
-            }
-            //Exercise_1(1000);
-            #endregion
+        //    //проверка на корректность ввода
+        //    if (double.TryParse(Console.ReadLine(), out double X))
+        //    {
+        //        Console.WriteLine($"При х={X} функция S'(x)={Exercise_4(X)}");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Введены не корректные данные.");
+        //    }
+        //    //Exercise_1(1000);
+        //    #endregion
 
-            #region Задание 5
+        //    #region Задание 5
 
-            Console.WriteLine("\n\n\n" + "Задание 5");
-            double Result = Math.Round(Exercise_5(), 3);
+        //    Console.WriteLine("\n\n\n" + "Задание 5");
+        //    double Result = Math.Round(Exercise_5(), 3);
 
-            //Проверка на корректность ввода
-            if (double.TryParse(Console.ReadLine(), out double Answer))
-            {
-                if (Result == Answer)
-                {
-                    Console.WriteLine("Молодец возьми с полки пирожок!");
-                }
-                else
-                {
-                    Console.WriteLine($"Не верно, правильный ответ равен {Math.Round(Result, 3)}");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"Ответ Введен не корректно. Правильный ответ равен {Math.Round(Result,3)}");
-            }
-            #endregion
-        }
+        //    //Проверка на корректность ввода
+        //    if (double.TryParse(Console.ReadLine(), out double Answer))
+        //    {
+        //        if (Result == Answer)
+        //        {
+        //            Console.WriteLine("Молодец возьми с полки пирожок!");
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine($"Не верно, правильный ответ равен {Math.Round(Result, 3)}");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine($"Ответ Введен не корректно. Правильный ответ равен {Math.Round(Result,3)}");
+        //    }
+        //    #endregion
+        //}
 
         /// <summary>
         /// Задание №1. Написать программу определения стоимости раговора по телефону 
