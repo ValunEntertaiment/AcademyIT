@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lessons.Lesson4.Exercise_3
+namespace Lessons.Lesson5.Exercise_3
 {
     class BaseUser
     {
@@ -11,7 +11,7 @@ namespace Lessons.Lesson4.Exercise_3
         public int Age { get; set; }
         public decimal Wallet { get; set; }
         public List<Product> Basket { get; set; }
-        public List<BaseCoupon> Coupons { get; set; } 
+        public List<BaseCoupon> Coupons { get; set; }
 
         /// <summary>
         /// Выводит всю инфу о пользователе
@@ -51,9 +51,9 @@ namespace Lessons.Lesson4.Exercise_3
         /// </summary>
         /// <param name="products">Список товаров на покупку</param>
         /// <returns>True: товары оплачены. False: на счету не достаточно средств</returns>
-        public bool Buy(List<Product> products)
+        public bool Buy(Product products)
         {
-            if(Wallet >= CostProducts(products))
+            if(Wallet >= products.Price)
             {
                 //открывается страничка доставки если адрес не указан
                 return true;

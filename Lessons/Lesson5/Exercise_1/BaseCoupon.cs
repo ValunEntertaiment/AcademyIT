@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lessons.Lesson4.Exercise_3
+namespace Lessons.Lesson5.Exercise_3
 {
     class BaseCoupon
     {

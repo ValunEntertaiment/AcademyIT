@@ -1,14 +1,16 @@
 ﻿using System;
-namespace Lessons.Lesson4.Exercise_3
+namespace Lessons.Lesson5.Exercise_3
 {
     class Admin : BaseUser
     {
         public override string Info() => $"Account: Admin\nLogin: {Login}\nPassword: {Password}\nName: {Name}\nAge: {Age}\nWallet: {Wallet}";
 
-        public void AddProduct()
+        public Product AddProduct(uint Id)
         {
             Product product = new Product();
-            
+
+            product.Id = Id;
+
             Console.Write("Введите название товара: ");
             product.Name = Console.ReadLine();
 
@@ -19,7 +21,8 @@ namespace Lessons.Lesson4.Exercise_3
             product.Price = Price;
 
             Console.WriteLine("Загрузите картинки своего продукта. Желательно с котиками :3");
-                //типа загрузил картинки в консоль
+            //типа загрузил картинки в консоль
+            return product;
         }
     }
 }
