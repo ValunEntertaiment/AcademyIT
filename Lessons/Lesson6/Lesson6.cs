@@ -15,13 +15,13 @@
     /// </summary>
     class Lesson6
     {
-        static void Main()
-        {
-            //Задание 1
-            //new Task1.Task1();
+        //static void Main()
+        //{
+        //    //Задание 1
+        //    new Task1.Task1();
 
-            //Задание 2
-            new Task2.Task2();
-        }
+        //    //Задание 2 - 3
+        //    new Task2.Task2();
+        //}
     }
 }

@@ -7,5 +7,13 @@
     /// </summary>
     class Lesson7
     {
+        static void Main()
+        {
+            //Задание 1
+            new Task1.Task1();
+
+            //Задание 2
+            new Task2.Task2();
+        }
     }
 }
