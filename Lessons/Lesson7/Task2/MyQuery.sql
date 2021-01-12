@@ -1,7 +1,4 @@
-SELECT scores.id,
-	   cources.name_cource as cource,
-       students.FIO AS student,
-       score
+SELECT COUNT(scores.id) as Count
 FROM `scores`
 inner JOIN students ON (students.id = scores.student)
 inner JOIN cources on (cources.id = scores.cource)
