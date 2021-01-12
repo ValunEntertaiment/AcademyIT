@@ -6,9 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Lesson8\Task1\" />
-    <Folder Include="Lesson8\Task2\" />
     <Folder Include="Lesson9\Task1\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.22" />
   </ItemGroup>
   
 </Project>

@@ -10,5 +10,9 @@
 
     class Lesson8
     {
+        static void Main()
+        {
+            new Task1.Task1();
+        }
     }
 }
