@@ -35,7 +35,7 @@ namespace Lessons.Lesson7.Task1
 
             do
             {
-                Console.WriteLine("Введите номер напитка");
+                Console.WriteLine($"Вывести список напитков(0) или выбрать напиток(1-{Beverages.Count})");
 
                 action = action = Console.ReadLine();
                 while (!new Regex(@"\d").IsMatch(action))
@@ -46,8 +46,10 @@ namespace Lessons.Lesson7.Task1
                     action = Console.ReadLine();
                 }
 
-                if(Beverages.Count >= int.Parse(action) && int.Parse(action) > 0)
-                    Console.WriteLine(Beverages[int.Parse(action) -1].Info());
+                if (Beverages.Count >= int.Parse(action) && int.Parse(action) > 0)
+                    Console.WriteLine(Beverages[int.Parse(action) - 1].Info());
+                else if (int.Parse(action) == 0)
+                    ShowBeverage();
                 else
                     Console.WriteLine("Такого напитка нет");
             } while (true);
